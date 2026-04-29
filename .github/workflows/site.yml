@@ -46,7 +46,7 @@ jobs:
         working-directory: nsd-cli
         run: |
           ./nsd model ../root-action.yml labels site -r=-1 -F ../page-template.yml ../docs
-          cp my.drawio ../docs
+          cp org-design.drawio ../docs
           zip -r ../docs/doc-stubs.zip ../doc
           ls ../docs
       - name: Upload artifact
