@@ -41,7 +41,7 @@ jobs:
           chmod u+x nsd          
           pwd
           ls ..
-          ./nsd xcore ../my.xcore doc --diagram=my.drawio --doc-stubs --doc-dir=../doc save ../my.xmi
+          ./nsd xcore ../org-design.xcore doc --diagram=org-design.drawio --doc-stubs --doc-dir=../doc save ../org-design.xmi
       - name: Generate Ecore site
         working-directory: nsd-cli
         run: |

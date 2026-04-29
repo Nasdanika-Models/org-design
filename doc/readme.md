@@ -1,5 +1,4 @@
-Some package documentation
 
 ```drawio-resource
-../my.drawio
+../org-design.drawio
 ```
