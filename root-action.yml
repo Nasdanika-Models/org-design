@@ -1,7 +1,7 @@
 app.Action:
   icon: https://docs.nasdanika.org/images/nasdanika-logo.png
-  text: Nasdanika Templates
-  location: https://github.com/Nasdanika-Templates
+  text: Nasdanika Models
+  location: https://github.com/Nasdanika-Models
   children:
     - app.ActionReference: "org-design.xmi#/"
     - app.Action:
