@@ -30,7 +30,7 @@ jobs:
           java-version: '21'
           distribution: 'temurin'
       - name: Download Nasdanika CLI
-        run: wget https://github.com/Nasdanika/cli/releases/download/maven-2026.6.0/nsd-cli.zip
+        run: wget https://github.com/Nasdanika/cli/releases/download/maven-2026.2.0/nsd-cli.zip
       - name: Unzip Nasdanika CLI
         run: unzip nsd-cli.zip
       - name: Setup Graphviz
@@ -41,15 +41,13 @@ jobs:
           chmod u+x nsd          
           pwd
           ls ..
-          ./nsd xcore ../model/src/main/resources/org/nasdanika/models/orgdesign/orgdesign.xcore doc --diagram=orgdesign.drawio --doc-stubs --doc-dir=../model/doc save ../model/orgdesign.xmi
+          ./nsd xcore ../org-design.xcore doc --diagram=org-design.drawio --doc-stubs --doc-dir=../doc save ../org-design.xmi
       - name: Generate Ecore site
         working-directory: nsd-cli
         run: |
-          ./nsd model ../model/root-action.yml labels site -r=-1 -F ../model/page-template.yml ../docs
-          cp orgdesign.drawio ../docs
-          cp ../model/src/main/resources/org/nasdanika/models/orgdesign/orgdesign.xcore ../docs
-          cp -R ../images ../docs
-          zip -r ../docs/doc-stubs.zip ../model/doc
+          ./nsd model ../root-action.yml labels site -r=-1 -F ../page-template.yml ../docs
+          cp org-design.drawio ../docs
+          zip -r ../docs/doc-stubs.zip ../doc
           ls ../docs
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
