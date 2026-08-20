@@ -11,7 +11,7 @@ An Ecore micro-model of organizational design: units, roles, people, capabilitie
 
 The aspect spine of the [Nasdanika model tower](https://nasdanika.com/models.html) runs
 
-> [nxcore](https://nxcore.models.nasdanika.org/) < [role](https://role.models.nasdanika.org/) < [iam](https://iam.models.nasdanika.org/) < [seal](https://seal.models.nasdanika.org/) < [lifecycle](https://lifecycle.models.nasdanika.org/) < [decision analysis](https://analysis.decision.models.nasdanika.org/) < [decision binding](https://binding.desicion.models.nasdanika.org) < [governance](https://governance.models.nasdanika.org/) < [work](https://work.models.nasdanika.org/) < [architecture](https://architecture.models.nasdanika.org/) < [threat](https://threat.models.nasdanika.org/)
+> [nxcore](https://nxcore.models.nasdanika.org/) < [role](https://role.models.nasdanika.org/) < [iam](https://iam.models.nasdanika.org/) < [seal](https://seal.models.nasdanika.org/) < [lifecycle](https://lifecycle.models.nasdanika.org/) < [decision analysis](https://analysis.decision.models.nasdanika.org/) < [decision binding](https://binding.decision.models.nasdanika.org) < [governance](https://governance.models.nasdanika.org/) < [work](https://work.models.nasdanika.org/) < [requirements](https://requirements.models.nasdanika.org/) < [architecture](https://architecture.models.nasdanika.org/) < [threat](https://threat.models.nasdanika.org/)
 
 and the enterprise branch continues off the top of it:
 
