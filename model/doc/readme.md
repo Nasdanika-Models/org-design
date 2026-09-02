@@ -17,7 +17,8 @@ and the enterprise branch continues off the top of it:
 
 > … < threat < [capability](https://capability.models.nasdanika.org/) < [product management](https://product-management.models.nasdanika.org/) < **org design**
 
-This model is the top floor of that branch, and almost nothing it needs is declared in it. An `OrganizationalUnit` extends the product management model's `CapabilityProvider`, which extends the capability model's `AbstractCapabilityProvider`, which lands on the threat model's `Asset`, the architecture model's `Element`, work's `Workable`, governance's `Governed`, lifecycle's `Staged`, seal's `SealedElement`, IAM's `Subject`, role's `Undergoer`, and nxcore's `NamedPeriod`. So a team, before this model says anything about it, already carries:
+This model is the second top floor of that branch, and almost nothing it needs is declared in it. An `OrganizationalUnit` extends the product management model's `CapabilityProvider`, which extends the capability model's `AbstractCapabilityProvider`, which lands on the threat model's `Asset`, the architecture model's `Element`, work's `Workable`, governance's `Governed`, lifecycle's `Staged`, seal's `SealedElement`, IAM's `Subject`, role's `Undergoer`, and nxcore's `NamedPeriod`.
+So a team, before this model says anything about it, already carries:
 
 * an owner, a sponsor, and an approver - as **role** engagements with dated validity, not as string attributes;
 * access control - a unit is an IAM `Subject` and an `AccessControlled` resource, so "who may see this part of the org model" is typed rather than a wiki permission;
@@ -29,6 +30,9 @@ This model is the top floor of that branch, and almost nothing it needs is decla
 * a place in the estate - a unit is an **architecture** `Element`, addressable from any other model that needs to point at an owner;
 * threats - a unit is an `Asset`; insider risk and key-person concentration are threats against it, promoted into the same risk register as everything else;
 * capabilities and the concerns they answer - from **capability** and **product management**, which is what makes duplication a query rather than a steering-committee discovery.
+
+It also depends on [AI governance](https://ai.governance.models.nasdanika.org/)).
+Two reasons for taking the AI governance branch: it does not hurt those who never touch AI, and nowadays AI is everywhere.
 
 What org design adds on top of that is small and specific: the structural vocabulary (units, reporting lines, unit kinds), the coordination vocabulary, decision rights, the environment the design is a response to, and the fit rules that connect the three.
 Everything else was inherited, which is the point of the tower.
